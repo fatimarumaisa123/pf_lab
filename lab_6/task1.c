@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() 
+{
+    int num,sum =0 ;
+    printf("input a number: ");
+    scanf("%d",&num);
+    while(num>0)
+    {
+        sum=sum+(num%10);
+        num=num/10;
+
+    }
+    if (sum>10)
+    printf("strong pin");
+    else 
+    printf("weak pin");
+return 0;
+}
